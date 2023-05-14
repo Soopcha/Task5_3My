@@ -26,6 +26,8 @@ public class FrameMain extends JFrame {
         splitPanelMain.setResizeWeight(1.0);
         splitPanelMain.setBorder(null);
 
+        ImageIcon icon = new ImageIcon("1.png"); // создание объекта ImageIcon с указанием пути к изображению
+        this.setIconImage(icon.getImage()); // установка изображения в качестве значка приложения
 
         ChangeButton.addActionListener(actionEvent -> {
             SimpleBinaryTree<Integer> tree = new SimpleBinaryTree<>(Integer::parseInt);
