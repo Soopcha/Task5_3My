@@ -86,6 +86,7 @@ public class BinaryTreeAlgorithms {
      */
     public static <T> String toBracketStr(BinaryTree.TreeNode<T> treeNode) {
         // данный класс нужен только для того, чтобы "спрятать" его метод (c 2-мя параметрами)
+        // (не надо так кроче, можно и отдельно просто прайват сделать метод)
         class Inner {
             void printTo(BinaryTree.TreeNode<T> node, StringBuilder sb) {
                 if (node == null) {
